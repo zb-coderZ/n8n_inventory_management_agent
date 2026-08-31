@@ -7,10 +7,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.4,
-      "position": [
-        -1120,
-        -448
-      ],
+      "position": [-1120, -448],
       "id": "4cebfaf4-d1e8-4a79-a45d-2009e31fb323",
       "name": "When chat message received",
       "webhookId": "26485683-a3e7-4742-854c-1279b4eaa973"
@@ -23,10 +20,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3.1,
-      "position": [
-        -640,
-        -448
-      ],
+      "position": [-640, -448],
       "id": "4668c88c-8dd9-45fe-84d6-fe0e4d467385",
       "name": "AI Agent",
       "executeOnce": false
@@ -37,17 +31,11 @@
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1.1,
-      "position": [
-        -1008,
-        -128
-      ],
+      "position": [-1008, -128],
       "id": "ea2cfd92-1eec-4500-af78-2e37b463d0a7",
       "name": "Google Gemini Chat Model",
       "credentials": {
-        "googlePalmApi": {
-          "id": "M5wco8bjXLEPoan7",
-          "name": "Google Gemini(PaLM) Api account 4"
-        }
+        "googlePalmApi": "write you credentials here"
       }
     },
     {
@@ -56,10 +44,7 @@
       },
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.4,
-      "position": [
-        -816,
-        -128
-      ],
+      "position": [-816, -128],
       "id": "c7f85484-9f04-4ffb-ab67-d8ed3f3f72eb",
       "name": "Simple Memory"
     },
@@ -93,17 +78,11 @@
       },
       "type": "n8n-nodes-base.googleSheetsTool",
       "typeVersion": 4.7,
-      "position": [
-        -656,
-        -128
-      ],
+      "position": [-656, -128],
       "id": "ddcf7f4d-8072-4a24-850e-c10e03042d17",
       "name": "Get Stock Level",
       "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "ooiNbykh47SGtWSc",
-          "name": "Google Sheets account 2"
-        }
+        "googleSheetsOAuth2Api": "write you credentials here"
       }
     },
     {
@@ -138,76 +117,13 @@
           },
           "matchingColumns": [],
           "schema": [
-            {
-              "id": "Product Name",
-              "displayName": "Product Name",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "SKU",
-              "displayName": "SKU",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "Current Stock",
-              "displayName": "Current Stock",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "Reorder Threshold",
-              "displayName": "Reorder Threshold",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "Unit",
-              "displayName": "Unit",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "Supplier Name",
-              "displayName": "Supplier Name",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "Last Updated",
-              "displayName": "Last Updated",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            }
+            {"id": "Product Name", "displayName": "Product Name", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "SKU", "displayName": "SKU", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "Current Stock", "displayName": "Current Stock", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "Reorder Threshold", "displayName": "Reorder Threshold", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "Unit", "displayName": "Unit", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "Supplier Name", "displayName": "Supplier Name", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "Last Updated", "displayName": "Last Updated", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false}
           ],
           "attemptToConvertTypes": false,
           "convertFieldsToString": false
@@ -216,17 +132,11 @@
       },
       "type": "n8n-nodes-base.googleSheetsTool",
       "typeVersion": 4.7,
-      "position": [
-        -144,
-        -128
-      ],
+      "position": [-144, -128],
       "id": "f1842eb4-a6e8-488d-8706-e4f1fadaa9de",
       "name": "Add New Product",
       "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "ooiNbykh47SGtWSc",
-          "name": "Google Sheets account 2"
-        }
+        "googleSheetsOAuth2Api": "write you credentials here"
       }
     },
     {
@@ -255,238 +165,9 @@
             "Current Stock": "={{ $fromAI('Current_Stock', ``, 'string') }}",
             "Last Updated": "={{ $fromAI('date') }}"
           },
-          "matchingColumns": [
-            "Product Name"
-          ],
+          "matchingColumns": ["Product Name"],
           "schema": [
-            {
-              "id": "Product Name",
-              "displayName": "Product Name",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": false
-            },
-            {
-              "id": "SKU",
-              "displayName": "SKU",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "Current Stock",
-              "displayName": "Current Stock",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "Reorder Threshold",
-              "displayName": "Reorder Threshold",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "Unit",
-              "displayName": "Unit",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "Supplier Name",
-              "displayName": "Supplier Name",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true,
-              "removed": true
-            },
-            {
-              "id": "Last Updated",
-              "displayName": "Last Updated",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "string",
-              "canBeUsedToMatch": true
-            },
-            {
-              "id": "row_number",
-              "displayName": "row_number",
-              "required": false,
-              "defaultMatch": false,
-              "display": true,
-              "type": "number",
-              "canBeUsedToMatch": true,
-              "readOnly": true,
-              "removed": true
-            }
-          ],
-          "attemptToConvertTypes": false,
-          "convertFieldsToString": false
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleSheetsTool",
-      "typeVersion": 4.7,
-      "position": [
-        0,
-        -128
-      ],
-      "id": "3c39d868-6f29-4b38-9f64-5cfd8667d785",
-      "name": "Update Stock",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "ooiNbykh47SGtWSc",
-          "name": "Google Sheets account 2"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "descriptionType": "manual",
-        "toolDescription": "Returns all products with their current stock and reorder threshold. Use this to identify which items are low on stock (where current stock is below threshold).",
-        "documentId": {
-          "__rl": true,
-          "value": "177jeBpCrWfj2ie-6roBxuE7HrvDi3drxsTnFMCaeHyc",
-          "mode": "list",
-          "cachedResultName": "Inventory_DB",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/177jeBpCrWfj2ie-6roBxuE7HrvDi3drxsTnFMCaeHyc/edit?usp=drivesdk"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": "gid=0",
-          "mode": "list",
-          "cachedResultName": "Sheet1",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/177jeBpCrWfj2ie-6roBxuE7HrvDi3drxsTnFMCaeHyc/edit#gid=0"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleSheetsTool",
-      "typeVersion": 4.7,
-      "position": [
-        -352,
-        -128
-      ],
-      "id": "7c7a1578-d6ca-4b8d-af27-5f198d6d93eb",
-      "name": "List Low Stock",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "ooiNbykh47SGtWSc",
-          "name": "Google Sheets account 2"
-        }
-      }
-    }
-  ],
-  "pinData": {},
-  "connections": {
-    "When chat message received": {
-      "main": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Google Gemini Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Simple Memory": {
-      "ai_memory": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Get Stock Level": {
-      "ai_tool": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Add New Product": {
-      "ai_tool": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Update Stock": {
-      "ai_tool": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "List Low Stock": {
-      "ai_tool": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_tool",
-            "index": 0
-          }
-        ]
-      ]
-    }
-  },
-  "active": false,
-  "settings": {
-    "executionOrder": "v1",
-    "binaryMode": "separate",
-    "availableInMCP": false
-  },
-  "versionId": "be965227-fbeb-4ae4-8103-f6c71bfc2452",
-  "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "8b47d49ed5e5984979e36d2b64807940e6ae16cfa9f1830df1ffd4f15f8e7edb"
-  },
-  "nodeGroups": [],
-  "id": "j5NliaEgn6D7cFYo",
-  "tags": []
-}
+            {"id": "Product Name", "displayName": "Product Name", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": false},
+            {"id": "SKU", "displayName": "SKU", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true, "removed": true},
+            {"id": "Current Stock", "displayName": "Current Stock", "required": false, "defaultMatch": false, "display": true, "type": "string", "canBeUsedToMatch": true},
+            {"id": "Reorder
